@@ -1,0 +1,41 @@
+<svg width="520" height="360" viewBox="0 0 520 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE1D0"/>
+      <stop offset="1" stop-color="#F2C9AE"/>
+    </linearGradient>
+    <linearGradient id="deep" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3A1D45"/>
+      <stop offset="1" stop-color="#6B2B4A"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF8F0"/>
+      <stop offset="1" stop-color="#F1E2CE"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="28" y="32" width="464" height="296" rx="38" fill="#FFF8F1"/>
+  <rect x="44" y="48" width="432" height="264" rx="28" fill="url(#bg)"/>
+
+  <ellipse cx="201" cy="160" rx="46" ry="52" fill="#F4C09D"/>
+  <ellipse cx="316" cy="164" rx="44" ry="50" fill="#F4C09D"/>
+
+  <path d="M159 156C162 123 178 104 203 102C228 101 246 116 247 146C229 130 200 125 159 156Z" fill="#321D3A"/>
+  <path d="M275 168C281 131 299 111 322 111C346 112 362 127 362 153C347 132 321 127 275 168Z" fill="#1D1425"/>
+
+  <circle cx="186" cy="161" r="5.5" fill="#231211"/>
+  <circle cx="215" cy="161" r="5.5" fill="#231211"/>
+  <circle cx="301" cy="166" r="5.5" fill="#231211"/>
+  <circle cx="329" cy="166" r="5.5" fill="#231211"/>
+
+  <path d="M189 184C195 190 207 190 213 184" stroke="#A55649" stroke-width="4" stroke-linecap="round"/>
+  <path d="M304 187C311 192 321 192 327 187" stroke="#8F453A" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M164 206C180 189 227 190 241 206L255 282H143L164 206Z" fill="url(#light)"/>
+  <path d="M284 214C299 194 339 194 355 214L373 282H267L284 214Z" fill="url(#deep)"/>
+
+  <path d="M186 226H222" stroke="#C59342" stroke-width="5" stroke-linecap="round"/>
+  <path d="M297 232H343" stroke="#C59342" stroke-width="5" stroke-linecap="round"/>
+
+  <path d="M255 83C261 76 272 76 279 83C286 91 284 104 271 113C259 104 251 91 255 83Z" fill="#D56A8A"/>
+</svg>

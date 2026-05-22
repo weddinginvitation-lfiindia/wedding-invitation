@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invitation | Home</title>
+    <meta
+      name="description"
+      content="Premium wedding and engagement invitation demo website with elegant 3D visuals, caricature couple art, and category-wise previews."
+    />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="site-name">
+          Wedding Invitation
+          <small>Forever starts here</small>
+        </div>
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a href="index.html" data-nav>Home</a>
+          <a href="demos.html" data-nav>Demo Page</a>
+          <a href="submit.html" data-nav>Google Form Submission</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="reveal">
+            <span class="kicker">Premium Wedding Invitations for Your Perfect Beginning</span>
+            <div class="script-line">A love story deserves a grand first impression</div>
+            <h1>Modern Digital Invitations With Elegant 3D Wedding Design</h1>
+            <p>
+              From caricature-style couple invites to cinematic engagement previews, this showcase helps your
+              clients discover invitation styles that feel personal, timeless, and unforgettable.
+            </p>
+            <p class="hero-tagline">
+              “Two hearts. One celebration. Infinite memories.”
+              <br />
+              “Where your forever begins with a beautifully crafted invite.”
+            </p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="demos.html">Explore Demo Gallery</a>
+              <a class="btn btn-outline" href="submit.html">Open Submission Page</a>
+            </div>
+          </div>
+
+          <div class="hero-art reveal">
+            <div class="hero-frame floating">
+              <img src="assets/images/indian-wedding-couple.png" alt="Indian wedding bride and groom caricature" />
+            </div>
+            <div class="floating-tag">
+              <strong id="totalDemoCount">94+ Demos</strong>
+              <span>Animated, Classic, Signature Collections</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Designed For A Luxurious Wedding Experience</h2>
+          <p class="section-sub reveal">
+            Every section blends floral warmth, cinematic gradients, and smooth interaction to deliver a premium
+            wedding-themed browsing journey on both desktop and mobile. All invitations we create are premium wedding
+            invitations.
+          </p>
+
+          <div class="feature-grid">
+            <article class="feature reveal">
+              <h3>Romantic Taglines</h3>
+              <p>
+                Soft script headlines and poetic wedding copy to capture emotion and create a memorable client
+                experience.
+              </p>
+            </article>
+            <article class="feature reveal">
+              <h3>Caricature Visuals</h3>
+              <p>
+                Indian wedding bride & groom caricature style included for a warm and premium celebration vibe.
+              </p>
+            </article>
+            <article class="feature reveal">
+              <h3>3D Premium Aesthetic</h3>
+              <p>
+                Layered cards, luxury shadows, and elegant color depth for a polished high-end invitation showroom.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0;">
+        <div class="container">
+          <h2 class="section-title reveal">Demo Collections</h2>
+          <p class="section-sub reveal">
+            Your client-facing gallery is grouped category-wise so every invitation demo is easy to browse,
+            preview, and open.
+          </p>
+
+          <div class="category-cards">
+            <article class="category-card reveal">
+              <h3>Animated Journey</h3>
+              <p>Caricature / Premium demos with expressive animated storytelling.</p>
+            </article>
+            <article class="category-card reveal">
+              <h3>Classic Journey</h3>
+              <p>Photo / Normal invitation styles with elegant and familiar compositions.</p>
+            </article>
+            <article class="category-card reveal">
+              <h3>Signature Journey</h3>
+              <p>Customized / High Premium invites crafted for deeply personalized Indian wedding events.</p>
+            </article>
+          </div>
+
+          <div class="cta-banner reveal">
+            <h3>“Your invitation is the first chapter of your wedding story.”</h3>
+            <p>
+              Showcase demos, collect client requirements, and convert interest into bookings with a premium,
+              mobile-friendly experience.
+            </p>
+            <div class="btn-row" style="margin-top: 1rem;">
+              <a class="btn btn-primary" href="demos.html">Open All Demo Previews</a>
+              <a class="btn btn-outline" href="submit.html">Client Details Form</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Copyright © 2026 Lincon Films and Infoway. All Rights Reserved.
+    </footer>
+
+    <script src="assets/js/demo-data.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      (function () {
+        if (!window.demoCatalog) return;
+        const count = window.demoCatalog.reduce((sum, cat) => sum + cat.items.length, 0);
+        const target = document.getElementById('totalDemoCount');
+        if (target) {
+          target.textContent = `${count}+ Demos`;
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invitation | Demo Page</title>
+    <meta
+      name="description"
+      content="Category-wise wedding invitation demo gallery with clickable previews and Google Drive demo links."
+    />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="site-name">
+          Wedding Invitation
+          <small>Preview Collections</small>
+        </div>
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a href="index.html" data-nav>Home</a>
+          <a href="demos.html" data-nav>Demo Page</a>
+          <a href="submit.html" data-nav>Google Form Submission</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-shell">
+          <div class="reveal">
+            <span class="kicker">Premium Wedding Invitation Demo Gallery</span>
+            <h1 class="section-title" style="margin-top: 0.8rem;">Category-Wise Invitation Preview Showcase</h1>
+            <p class="section-sub">
+              Every demo is separated and presented with a dedicated preview card, thumbnail, and direct clickable
+              link so your clients can quickly compare invitation styles. Every invitation shown here is a premium
+              wedding invitation.
+            </p>
+            <p class="hero-tagline" style="margin-top: 0.6rem;">
+              “Crafted with love, presented with elegance.”
+            </p>
+            <div class="control-row">
+              <input
+                id="demoSearch"
+                class="search"
+                type="search"
+                placeholder="Search demo name (e.g. PV010, CV001, Ringceremony...)"
+                aria-label="Search demos"
+              />
+              <div class="chips" id="categoryChips" aria-label="Category Filters"></div>
+            </div>
+            <p class="form-note" style="margin-top: 0.5rem;">
+              Showing <strong id="demoTotalCount">0</strong> preview cards.
+            </p>
+          </div>
+
+          <div class="reveal floating">
+            <img src="assets/images/indian-wedding-couple.png" alt="Indian wedding caricature decorative illustration" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 1.2rem;">
+        <div class="container" id="demoSections"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Copyright © 2026 Lincon Films and Infoway. All Rights Reserved.
+    </footer>
+
+    <script src="assets/js/demo-data.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/demos.js"></script>
+  </body>
+</html>
