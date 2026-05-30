@@ -114,10 +114,10 @@
         fallback.style.height = '100%';
         fallback.style.display = 'grid';
         fallback.style.placeItems = 'center';
-        fallback.style.color = '#ffffff';
+        fallback.style.color = '#111111';
         fallback.style.fontWeight = '600';
         fallback.style.fontSize = '1.2rem';
-        fallback.style.background = 'linear-gradient(120deg,#1b7a55,#1d8a61,#175f43)';
+        fallback.style.background = 'linear-gradient(120deg,#ffffff,#f5f5f5,#eeeeee)';
         fallback.textContent = initials;
         wrapper.prepend(fallback);
       });
