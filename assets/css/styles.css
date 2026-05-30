@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap');
 
 :root {
-  --bg: #050b08;
-  --bg-soft: #0a1711;
-  --text: #ecf4ec;
-  --muted: #b6c8bb;
-  --rose: #e7bc62;
+  --bg: #0d3a2b;
+  --bg-soft: #11543c;
+  --text: #ffffff;
+  --muted: #f0fff4;
+  --rose: #ffffff;
   --wine: #1a3b2f;
   --gold: #d7ab55;
   --gold-deep: #97723a;
-  --card: #0f1d16;
-  --ring: #2a4538;
-  --glass: rgba(14, 30, 22, 0.72);
-  --shadow: 0 14px 40px rgba(0, 0, 0, 0.42);
-  --shadow-deep: 0 24px 52px rgba(0, 0, 0, 0.62);
+  --card: #175740;
+  --ring: #2f7a5f;
+  --glass: rgba(24, 94, 67, 0.7);
+  --shadow: 0 14px 40px rgba(9, 58, 40, 0.34);
+  --shadow-deep: 0 24px 52px rgba(7, 49, 34, 0.44);
 }
 
 * {
@@ -56,7 +56,7 @@ main {
   top: 0;
   z-index: 50;
   backdrop-filter: blur(10px);
-  background: linear-gradient(180deg, rgba(7, 18, 13, 0.95), rgba(7, 18, 13, 0.72));
+  background: linear-gradient(180deg, rgba(17, 84, 60, 0.95), rgba(17, 84, 60, 0.78));
   border-bottom: 1px solid rgba(193, 158, 85, 0.26);
 }
 
@@ -83,7 +83,7 @@ main {
   letter-spacing: 0.02em;
   text-transform: none;
   font-weight: 400;
-  color: var(--gold);
+  color: #ffffff;
   font-size: 1.05rem;
   margin-top: 0.08rem;
 }
@@ -107,7 +107,7 @@ main {
 .nav-links a:hover,
 .nav-links a.active {
   border-color: rgba(215, 171, 85, 0.52);
-  background: rgba(20, 44, 33, 0.9);
+  background: rgba(32, 102, 74, 0.9);
   transform: translateY(-1px);
 }
 
@@ -126,9 +126,9 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  background: rgba(15, 37, 27, 0.86);
+  background: rgba(24, 96, 68, 0.86);
   border: 1px solid rgba(215, 171, 85, 0.3);
-  color: var(--gold);
+  color: #ffffff;
   border-radius: 999px;
   padding: 0.5rem 0.92rem;
   font-size: 0.83rem;
@@ -141,7 +141,7 @@ main {
   font-weight: 500;
   letter-spacing: 0.02em;
   font-size: clamp(1.08rem, 2vw, 1.45rem);
-  color: #d8e6da;
+  color: #ffffff;
 }
 
 .hero h1 {
@@ -163,7 +163,7 @@ main {
   margin-top: 1rem;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem;
-  color: #d3e1d5;
+  color: #ffffff;
 }
 
 .btn-row {
@@ -189,24 +189,24 @@ main {
 
 .btn-primary {
   color: #fff;
-  background: linear-gradient(120deg, #25543f, #112b20);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.45);
+  background: linear-gradient(120deg, #1d7a56, #155d42);
+  box-shadow: 0 10px 22px rgba(8, 62, 43, 0.38);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 14px 26px rgba(8, 62, 43, 0.48);
 }
 
 .btn-outline {
   color: var(--text);
   border: 1px solid rgba(215, 171, 85, 0.5);
-  background: rgba(16, 38, 28, 0.85);
+  background: rgba(27, 103, 73, 0.88);
 }
 
 .btn-outline:hover {
   transform: translateY(-2px);
-  background: rgba(23, 50, 37, 0.92);
+  background: rgba(30, 117, 82, 0.94);
 }
 
 .hero-art {
@@ -215,7 +215,7 @@ main {
 
 .hero-frame {
   border-radius: 30px;
-  background: linear-gradient(160deg, #0b1b14, #12261d);
+  background: linear-gradient(160deg, #1a7451, #12543b);
   padding: 1rem;
   box-shadow: var(--shadow-deep);
   transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
@@ -236,7 +236,7 @@ main {
   bottom: 1.5rem;
   padding: 0.8rem 1rem;
   border-radius: 18px;
-  background: rgba(8, 22, 16, 0.92);
+  background: rgba(19, 88, 62, 0.94);
   border: 1px solid rgba(215, 171, 85, 0.36);
   box-shadow: var(--shadow);
 }
@@ -245,7 +245,7 @@ main {
   display: block;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem;
-  color: var(--gold);
+  color: #ffffff;
 }
 
 .floating-tag span {
@@ -290,7 +290,7 @@ main {
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.36rem;
-  color: var(--gold);
+  color: #ffffff;
 }
 
 .feature p {
@@ -312,7 +312,7 @@ main {
   overflow: hidden;
   padding: 1.2rem;
   border-radius: 24px;
-  background: linear-gradient(150deg, rgba(15, 33, 24, 0.95), rgba(11, 27, 20, 0.95));
+  background: linear-gradient(150deg, rgba(23, 92, 65, 0.95), rgba(19, 77, 55, 0.95));
   border: 1px solid rgba(215, 171, 85, 0.28);
   box-shadow: var(--shadow);
 }
@@ -343,7 +343,7 @@ main {
   margin-top: 2rem;
   padding: 2rem;
   border-radius: 28px;
-  background: linear-gradient(130deg, rgba(9, 25, 18, 0.97), rgba(28, 62, 46, 0.95));
+  background: linear-gradient(130deg, rgba(22, 96, 68, 0.97), rgba(18, 76, 54, 0.96));
   color: #fff;
   box-shadow: var(--shadow-deep);
 }
@@ -356,11 +356,11 @@ main {
 
 .cta-banner p {
   margin: 0.65rem 0 0;
-  color: rgba(225, 240, 226, 0.9);
+  color: #ffffff;
 }
 
 .cta-banner .btn-outline {
-  background: rgba(19, 42, 31, 0.85);
+  background: rgba(37, 120, 86, 0.85);
   border-color: rgba(215, 171, 85, 0.48);
   color: #fff;
 }
@@ -369,7 +369,7 @@ main {
   margin-top: 3.2rem;
   padding: 1.4rem 0 2rem;
   text-align: center;
-  color: #8fb09b;
+  color: #ffffff;
   font-size: 0.92rem;
 }
 
@@ -388,7 +388,7 @@ main {
   border-radius: 24px;
   border: 1px solid rgba(215, 171, 85, 0.2);
   box-shadow: var(--shadow);
-  background: rgba(12, 30, 21, 0.9);
+  background: rgba(23, 92, 65, 0.9);
   max-height: 620px;
   object-fit: contain;
 }
@@ -405,7 +405,7 @@ main {
   min-width: 220px;
   border-radius: 999px;
   border: 1px solid rgba(215, 171, 85, 0.28);
-  background: rgba(12, 29, 22, 0.85);
+  background: rgba(24, 95, 68, 0.88);
   padding: 0.72rem 1rem;
   color: var(--text);
 }
@@ -427,13 +427,13 @@ main {
   border: 1px solid rgba(215, 171, 85, 0.28);
   font-size: 0.86rem;
   color: var(--text);
-  background: rgba(13, 30, 22, 0.8);
+  background: rgba(24, 96, 68, 0.84);
   cursor: pointer;
 }
 
 .chip.active,
 .chip:hover {
-  background: linear-gradient(120deg, rgba(31, 67, 50, 0.95), rgba(16, 35, 26, 0.95));
+  background: linear-gradient(120deg, rgba(34, 125, 88, 0.95), rgba(23, 96, 68, 0.95));
   border-color: rgba(215, 171, 85, 0.52);
 }
 
@@ -456,7 +456,7 @@ main {
 }
 
 .demo-count {
-  color: #9db7a4;
+  color: #ffffff;
   font-size: 0.9rem;
 }
 
@@ -472,20 +472,20 @@ main {
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid rgba(215, 171, 85, 0.22);
-  background: rgba(11, 27, 20, 0.95);
+  background: rgba(22, 85, 60, 0.95);
   box-shadow: var(--shadow);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .demo-card:hover {
   transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 40px rgba(9, 58, 40, 0.45);
 }
 
 .thumb {
   position: relative;
   aspect-ratio: 16 / 10;
-  background: linear-gradient(120deg, #163124, #22543f, #0f261c);
+  background: linear-gradient(120deg, #1b7a55, #1d8a61, #175f43);
   overflow: hidden;
 }
 
@@ -499,7 +499,7 @@ main {
   position: absolute;
   top: 0.6rem;
   left: 0.6rem;
-  background: rgba(8, 22, 16, 0.8);
+  background: rgba(20, 87, 61, 0.82);
   color: #fff;
   padding: 0.28rem 0.62rem;
   border-radius: 999px;
@@ -517,7 +517,7 @@ main {
   display: grid;
   place-items: center;
   background: rgba(235, 225, 201, 0.92);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 8px 20px rgba(9, 58, 40, 0.45);
 }
 
 .play-dot::before {
@@ -556,13 +556,13 @@ main {
   padding: 0.5rem 0.6rem;
   font-size: 0.78rem;
   text-align: center;
-  background: rgba(14, 34, 25, 0.9);
+  background: rgba(23, 92, 65, 0.92);
   color: var(--text);
   cursor: pointer;
 }
 
 .demo-actions a:first-child {
-  background: linear-gradient(120deg, #1f4b37, #122b20);
+  background: linear-gradient(120deg, #1a7a54, #166546);
   color: #fff;
   border-color: transparent;
 }
@@ -578,7 +578,7 @@ main {
 .form-info {
   border-radius: 24px;
   border: 1px solid rgba(215, 171, 85, 0.22);
-  background: rgba(11, 26, 19, 0.92);
+  background: rgba(22, 86, 61, 0.93);
   box-shadow: var(--shadow);
   padding: 1.1rem;
 }
@@ -609,7 +609,7 @@ main {
 .form-group select {
   border-radius: 12px;
   border: 1px solid rgba(215, 171, 85, 0.22);
-  background: rgba(8, 20, 15, 0.95);
+  background: rgba(21, 82, 58, 0.95);
   padding: 0.62rem 0.7rem;
   font: inherit;
   color: var(--text);
@@ -623,7 +623,7 @@ main {
 .form-note {
   margin-top: 0.85rem;
   font-size: 0.84rem;
-  color: #9ab9a4;
+  color: #ffffff;
 }
 
 .info-list {
@@ -643,7 +643,7 @@ main {
 }
 
 .info-list b {
-  color: var(--gold);
+  color: #ffffff;
 }
 
 .reveal {
