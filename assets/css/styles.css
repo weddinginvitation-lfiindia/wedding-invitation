@@ -733,3 +733,144 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+/* Black Theme Override */
+:root {
+  --bg: #020202;
+  --bg-soft: #0a0a0a;
+  --text: #ffffff;
+  --muted: #ebebeb;
+  --card: #0e0e0e;
+  --ring: #2e2e2e;
+  --glass: rgba(18, 18, 18, 0.92);
+  --shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+  --shadow-deep: 0 24px 52px rgba(0, 0, 0, 0.62);
+}
+
+html,
+body {
+  color: var(--text) !important;
+  background: radial-gradient(1300px 600px at -10% -10%, rgba(45, 45, 45, 0.32) 0%, transparent 55%),
+    radial-gradient(900px 420px at 105% 4%, rgba(32, 32, 32, 0.26) 0%, transparent 50%),
+    linear-gradient(140deg, var(--bg) 0%, var(--bg-soft) 100%) !important;
+}
+
+.topbar {
+  background: linear-gradient(180deg, rgba(6, 6, 6, 0.96), rgba(10, 10, 10, 0.86)) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22) !important;
+}
+
+.site-name,
+.site-name small,
+.nav-links a,
+.section-title,
+.hero h1,
+.script-line,
+.hero-tagline,
+.feature h3,
+.category-card h3,
+.cta-banner h3,
+.cta-banner p,
+.demo-head h2,
+.demo-title,
+.floating-tag strong,
+.info-list b,
+.form-group label {
+  color: #ffffff !important;
+}
+
+.hero p,
+.section-sub,
+.feature p,
+.category-card p,
+.floating-tag span,
+.demo-count,
+.form-note,
+.info-list li {
+  color: #ebebeb !important;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  border-color: rgba(255, 255, 255, 0.42) !important;
+  background: rgba(22, 22, 22, 0.9) !important;
+}
+
+.kicker {
+  background: rgba(14, 14, 14, 0.94) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+}
+
+.btn-primary,
+.btn-outline,
+.cta-banner .btn-outline {
+  color: #ffffff !important;
+  background: #101010 !important;
+  border: 1px solid rgba(255, 255, 255, 0.38) !important;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.45) !important;
+}
+
+.btn-outline:hover,
+.btn-primary:hover {
+  background: #1b1b1b !important;
+}
+
+.hero-frame,
+.floating-tag,
+.feature,
+.category-card,
+.cta-banner,
+.demo-card,
+.form-card,
+.form-info,
+.page-shell img {
+  background: #0d0d0d !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: var(--shadow) !important;
+}
+
+.hero-frame img {
+  background: #0d0d0d !important;
+}
+
+.search,
+.chip,
+.thumb-badge,
+.demo-actions a,
+.demo-actions button,
+.form-group input,
+.form-group textarea,
+.form-group select {
+  background: #121212 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+}
+
+.chip.active,
+.chip:hover {
+  background: #1c1c1c !important;
+  border-color: rgba(255, 255, 255, 0.42) !important;
+}
+
+.thumb {
+  background: #131313 !important;
+}
+
+.thumb-badge {
+  color: #ffffff !important;
+}
+
+.play-dot {
+  background: #111111 !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45) !important;
+}
+
+.play-dot::before {
+  border-left: 10px solid #ffffff !important;
+}
+
+.footer {
+  color: #ffffff !important;
+}
