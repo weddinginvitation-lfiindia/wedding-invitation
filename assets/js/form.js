@@ -19,7 +19,7 @@
 
       if (frameBox) {
         const sep = GOOGLE_FORM_URL.includes('?') ? '&' : '?';
-        frameBox.innerHTML = `<iframe title="Google Form" src="${GOOGLE_FORM_URL}${sep}embedded=true" width="100%" height="620" frameborder="0" marginheight="0" marginwidth="0" style="border-radius:18px; border:1px solid rgba(164,113,82,0.26); background:#fff;"></iframe>`;
+        frameBox.innerHTML = `<iframe title="Google Form" src="${GOOGLE_FORM_URL}${sep}embedded=true" width="100%" height="620" frameborder="0" marginheight="0" marginwidth="0" style="border-radius:18px; border:1px solid rgba(255,255,255,0.18); background:#fff;"></iframe>`;
       }
       return;
     }
