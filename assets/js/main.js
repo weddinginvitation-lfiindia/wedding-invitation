@@ -16,14 +16,6 @@
   const currentRaw = window.location.pathname.split('/').pop() || '';
   const currentPage = normalizePage(currentRaw);
 
-  // Keep URLs clean (`home`, `demos`, `submit`) while preserving local-file compatibility.
-  if (currentRaw.toLowerCase().endsWith('.html')) {
-    const cleanPath = window.location.pathname.replace(/[^/]+$/, currentPage);
-    if (cleanPath !== window.location.pathname) {
-      window.history.replaceState({}, '', `${cleanPath}${window.location.search}${window.location.hash}`);
-    }
-  }
-
   const reveals = document.querySelectorAll('.reveal');
   if (reveals.length) {
     const io = new IntersectionObserver(

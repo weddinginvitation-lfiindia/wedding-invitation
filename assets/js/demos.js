@@ -25,17 +25,30 @@
 
   function cardTemplate(item, catName, uniqueName) {
     const safeTitle = uniqueName.replace(/"/g, '&quot;');
+    const safeDescription = item.description ? item.description.replace(/"/g, '&quot;') : '';
+    const actionLabel = item.actionLabel || 'Open Demo';
+    const isAudio = item.mime && item.mime.startsWith('audio/');
+    const audioPreviewUrl = item.audioPreviewUrl || (isAudio ? `https://drive.google.com/uc?export=download&id=${item.id}` : '');
+    const thumbContent = item.thumbnail
+      ? `<img src="${item.thumbnail}" alt="${safeTitle} preview" loading="lazy" referrerpolicy="no-referrer">`
+      : `<div class="thumb-fallback ${isAudio ? 'audio-thumb' : ''}"><strong>${isAudio ? 'Audio' : toInitials(uniqueName)}</strong><span>${safeDescription || 'Preview Collection'}</span></div>`;
+    const audioPlayer = audioPreviewUrl
+      ? `<audio class="audio-preview" controls preload="none" src="${audioPreviewUrl}">Audio preview is not supported in this browser.</audio>`
+      : '';
+
     return `
       <article class="demo-card reveal" data-name="${safeTitle.toLowerCase()}" data-category="${catName}">
         <div class="thumb" data-initial="${toInitials(uniqueName)}">
-          <img src="${item.thumbnail}" alt="${safeTitle} preview" loading="lazy" referrerpolicy="no-referrer">
+          ${thumbContent}
           <span class="thumb-badge">${catName}</span>
           <span class="play-dot" aria-hidden="true"></span>
         </div>
         <div class="demo-body">
           <p class="demo-title">${safeTitle}</p>
+          ${safeDescription ? `<p class="demo-description">${safeDescription}</p>` : ''}
+          ${audioPlayer}
           <div class="demo-actions">
-            <a href="${item.url}" target="_blank" rel="noopener noreferrer">Open Demo</a>
+            <a href="${item.url}" target="_blank" rel="noopener noreferrer">${actionLabel}</a>
             <button type="button" data-copy="${item.url}">Copy Link</button>
           </div>
         </div>
@@ -84,7 +97,7 @@
         <div class="demo-head">
           <div>
             <h2>${cat.title}</h2>
-            <div class="demo-count">${matchItems.length} demo previews</div>
+            <div class="demo-count">${matchItems.length} preview cards</div>
           </div>
           <a class="btn btn-outline" href="${cat.folderUrl}" target="_blank" rel="noopener noreferrer">Open Full Folder</a>
         </div>
@@ -117,7 +130,7 @@
         fallback.style.color = '#ffffff';
         fallback.style.fontWeight = '600';
         fallback.style.fontSize = '1.2rem';
-        fallback.style.background = 'linear-gradient(120deg,#050505,#2c2c2c,#f1f1f1)';
+        fallback.style.background = 'linear-gradient(120deg,#e91e63,#c2183a,#ffd247)';
         fallback.textContent = initials;
         wrapper.prepend(fallback);
       });
